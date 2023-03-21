@@ -3,7 +3,10 @@
 /**
  * _islower - check the code.
  *
- * Return: int.
+ * Description - 'the program's description'
+ * @c: describe the parameter
+ *
+ * Return: Always 0 (Success)
  */
 int _islower(int c)
 {
