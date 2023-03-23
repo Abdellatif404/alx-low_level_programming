@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - check the code.
+ * print_numbers - check the code.
  *
  * Description - 'the program's description'
  * @: describe the parameter
@@ -11,7 +11,9 @@
 void print_numbers(void)
 {
 	char *numbers = "0123456789\n";
+	int i;
 
+	i = 0;
 	while (numbers[i])
 		_putchar(numbers[i++]);
 }
