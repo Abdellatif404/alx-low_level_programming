@@ -19,7 +19,6 @@ void more_numbers(void)
 		i = 0;
 		while (numbers[i])
 			_putchar(numbers[i++]);
-		_putchar('\n');
 		j++;
 	}
 }
