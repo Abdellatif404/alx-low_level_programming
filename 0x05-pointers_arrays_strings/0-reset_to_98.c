@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_square - writes the character c to stdout
- * @size: The size of square
+ * reset_to_98 - writes the character c to stdout
+ * @n: The size of square
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
