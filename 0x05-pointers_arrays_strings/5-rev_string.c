@@ -11,20 +11,20 @@
 void rev_string(char *s)
 {
 	int i, len;
-	char cpy[500];
+	char c;
 
 	len = i = 0;
 	while (s[i])
 	{
-		cpy[i] = s[i];
 		i++;
 		len++;
 	}
-	len -= 1;
 	i = 0;
-	while (cpy[i])
+	while (i < len / 2)
 	{
-		s[len] = cpy[i];
+		c = s[i];
+		s[i] = s[len - 1];
+		s[len - 1] = c;
 		len--;
 		i++;
 	}
