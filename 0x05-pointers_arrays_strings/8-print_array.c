@@ -23,6 +23,13 @@ void print_array(int *a, int n)
 			printf("%d\n", a[i]);
 		i++;
 	}
+	i = n;
 	if (n < 0)
-		_putchar('\n');
+	{
+		while (i <= 0)
+		{
+			_putchar('\n');
+			i++;
+		}
+	}
 }
