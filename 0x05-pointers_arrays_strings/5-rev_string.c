@@ -10,20 +10,22 @@
  */
 void rev_string(char *s)
 {
-	int i, j;
-	char c;
+	int i, len;
+	char cpy[200];
 
-	j = 0;
-	while (s[j])
-		j++;
-	j -= 1;
-	i = 0;
-	while (i != j)
+	len = i = 0;
+	while (s[i])
 	{
-		c = s[i];
-		s[i] = s[j];
-		s[j] = c;
+		cpy[i] = s[i];
 		i++;
-		j--;
+		len++;
+	}
+	len -= 1;
+	i = 0;
+	while (cpy[i])
+	{
+		s[len] = cpy[i];
+		len--;
+		i++;
 	}
 }
