@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strncat - check the code.
@@ -18,7 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 	while (dest[i])
 		i++;
 	j = 0;
-	while (j < n)
+	while (j < n && src[j])
 	{
 		dest[i] = src[j];
 		i++;
