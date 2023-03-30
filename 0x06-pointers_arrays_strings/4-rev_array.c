@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_array - check the code.
+ * reverse_array - check the code.
  *
  * Description - 'the program's description'
  * @a: describe the parameter
@@ -9,7 +9,7 @@
  *
  * Return: Always 0 (Success)
  */
-void print_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i, j, temp;
 
