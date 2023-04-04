@@ -39,6 +39,13 @@ char *_strstr(char *haystack, char *needle)
 		else
 			break;
 	}
+	i = 0;
+	if (!needle[i])
+	{
+		while (haystack[i])
+			i++;
+		return (s + i);
+	}
 	if (occurrence == 0)
 		return (0);
 	return (s);
