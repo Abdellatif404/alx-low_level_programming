@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - prints the program's name.
+ * main - multiplies two numbers.
  *
  * @ac: arguments count
  * @av: arguments vector
@@ -12,7 +13,7 @@ int main(int ac, char **av)
 {
 	if (ac == 3)
 	{
-		printf("%d\n", (int)(av[1][0] - 48) * (int)(av[2][0] - 48));
+		printf("%d\n", atoi(av[1]) * atoi(av[2]));
 	}
 	else
 	{
