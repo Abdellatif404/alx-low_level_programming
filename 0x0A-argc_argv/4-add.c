@@ -24,6 +24,11 @@ int main(int ac, char **av)
 			printf("Error\n");
 			return (1);
 		}
+		if (sum < 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
 		i++;
 	}
 	printf("%d\n", sum);
