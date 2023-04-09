@@ -17,7 +17,7 @@ int main(int ac, char **av)
 	sum = 0;
 	while (i < ac)
 	{
-		if (atoi(av[i]))
+		if (atoi(av[i]) || *av[i] == 48)
 			sum += atoi(av[i]);
 		else
 		{
