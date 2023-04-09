@@ -11,26 +11,21 @@
  */
 int main(int ac, char **av)
 {
-	int i, sum;
+	long int i, sum;
 
 	i = 1;
 	sum = 0;
 	while (i < ac)
 	{
-		if (atoi(av[i]) || *av[i] == 48)
+		if ((atoi(av[i]) || *av[i] == 48) && atoi(av[i]) >= 0)
 			sum += atoi(av[i]);
 		else
 		{
 			printf("Error\n");
 			return (1);
 		}
-		if (sum < 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
 		i++;
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
