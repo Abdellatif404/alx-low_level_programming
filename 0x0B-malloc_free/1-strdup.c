@@ -30,14 +30,15 @@ char *_strdup(char *str)
 	char *dup;
 
 	i = 0;
-	len = _strlen(str) + 1;
-	dup = malloc(len * sizeof(char));
-	if (!dup || !str)
+	len = _strlen(str);
+	dup = malloc((len + 1) * sizeof(char));
+	if (!dup || !len)
 		return (0);
 	while (i < len)
 	{
 		dup[i] = str[i];
 		i++;
 	}
+	dup[i] = '\0';
 	return (dup);
 }
