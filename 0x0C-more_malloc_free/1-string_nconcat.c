@@ -15,18 +15,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, j;
 	char *str;
 
-	if (s1 == NULL)
+	if (!s1)
 		s1 = "";
-	if (s2 == NULL)
+	if (!s2)
 		s2 = "";
 	i = 0;
 	while (s2[i])
 		i++;
-	if (n >= i)
+	if (n > i)
 		n = i;
 	while (s1[i])
 		i++;
-	str = malloc((i + 1) * sizeof(char));
+	if (i > 0)
+		str = malloc((i + 1) * sizeof(char));
 	if (!str)
 		return (0);
 	i = j = 0;
