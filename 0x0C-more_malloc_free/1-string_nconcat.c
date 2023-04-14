@@ -24,11 +24,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len1++;
 	while (s2[len2])
 		len2++;
-	if (n > len2)
+	if (n >= len2)
 		n = len2;
-	str = malloc((len1 + len2 + 1) * sizeof(char));
+	str = (char *) malloc((len1 + len2 + 1) * sizeof(char));
 	if (!str)
-		return (0);
+		return (NULL);
 	i = j = 0;
 	while (s1[i])
 	{
